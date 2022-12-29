@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  font-family: 'Press Start 2P', sans-serif;
 }
 
 html {
@@ -12,9 +13,10 @@ html {
 }
 
 body {
-  font-family: 'Press Start 2P', sans-serif;
+  /* font-family: 'Press Start 2P', sans-serif; */
   color: #eee;
   background-color: #222;
+  position: relative;
   /* background-color: #60b347; */
 }
 
@@ -69,10 +71,16 @@ h1 {
   transform: translate(-50%, 50%);
 }
 
+.rules-btn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
 .between {
   font-size: 1.4rem;
   position: absolute;
-  top: 2rem;
+  top: 10rem;
   right: 2rem;
 }
 
@@ -132,4 +140,59 @@ a {
 
 #powered {
   margin: 1em;
+}
+
+/* rules modal windom */
+
+.hidden {
+  display: none;
+}
+
+.rulesback {
+  background-color: #222;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0rem;
+}
+.rules {
+  background-color: #ccc;
+  width: 1000px;
+  /*height: 500px;*/
+  color: #222;
+  padding: 50px;
+  position: absolute;
+  left: 20rem;
+  top: 5rem;
+  z-index: 2;
+  padding: 50px;
+}
+
+.ruleshead {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.rulespoints {
+  font-size: 20px;
+  padding: 20px;
+  line-height: 3.5rem;
+}
+
+.start-btn {
+  margin: 5px;
+  padding: 20px 50px;
+  background-color: #222;
+  color: #ccc;
+  font-size: 20px;
+}
+
+.rulescloser {
+  font-size: 40px;
+  font-weight: 900;
+  position: relative;
+  z-index: 3;
+  left: 85rem;
+  top: -6rem;
 }

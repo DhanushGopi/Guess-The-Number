@@ -9,7 +9,8 @@
   </head>
   <body>
     <header>
-      <h1>Guess My Number!</h1>
+      <h1 class="h1">Guess My Number!</h1>
+      <button class="btn rules-btn">Rules!</button>
       <p class="between">(Between 1 and 20)</p>
       <button class="btn again">Again!</button>
       <div id="cta">
@@ -20,6 +21,22 @@
       </div>
       <div class="number">?</div>
     </header>
+    <div class="rulesback hidden"></div>
+    <div class="rules hidden">
+      <p class="ruleshead">Rules!</p>
+      <p class="rulescloser">&times;</p>
+      <ul class="rulespoints">
+        <li>It is an Number Guessing Game!</li>
+        <li>It's an battle between AI and Humans!</li>
+        <li>
+          you have to find the exact number which was already chosen by AI.
+        </li>
+        <li>you got only 20 chances!</li>
+        <li>you need to protect the existing score.</li>
+        <li>For each wrong choice you will get 1point minus from the score.</li>
+      </ul>
+      <button class="start-btn starthidden">Start!</button>
+    </div>
     <main>
       <section class="left">
         <input type="number" class="guess" />
