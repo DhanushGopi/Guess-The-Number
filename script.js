@@ -83,6 +83,7 @@ document.querySelector('.again').addEventListener('click', function () {
   score = 20;
   document.querySelector('.score').textContent = score;
   secretNumber = Math.trunc(Math.random() * 21);
+  document.querySelector('.message').textContent = 'Start guessing...';
   //console.log('After the again btn ' + secretNumber);
   //styling
   document.querySelector('.number').textContent = '?';
