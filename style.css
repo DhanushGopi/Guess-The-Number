@@ -196,3 +196,10 @@ a {
   left: 85rem;
   top: -6rem;
 }
+
+.views {
+  position: relative;
+  z-index: 4;
+  left: 52rem;
+  top: 4rem;
+}
